@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STRIKE – Payment Page ⚡</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1 class="logo">S<span>⚡</span>TRIKE</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#premium-courses">Courses</a></li>
+        <li><a href="#contact">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Payment Section -->
+  <section class="payment-section">
+    <div class="payment-container">
+      <h2>Premium Course Payment 💎</h2>
+      <p>Complete your payment securely to unlock lifetime access to premium courses.</p>
+
+      <form class="payment-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="example@email.com" required>
+
+        <label for="card">Card Number</label>
+        <input type="text" id="card" placeholder="1234 5678 9012 3456" maxlength="19" required>
+
+        <div class="card-details">
+          <div>
+            <label for="expiry">Expiry Date</label>
+            <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" required>
+          </div>
+          <div>
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" placeholder="•••" maxlength="3" required>
+          </div>
+        </div>
+
+        <button type="submit" class="pay-btn">Pay ₹999</button>
+        <p class="note">*This is a demo payment page (no real transactions)</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>⚡ STRIKE © 2025 | Secure Demo Payment | HTML + CSS Only ⚡</p>
+  </footer>
+
+</body>
+</html>

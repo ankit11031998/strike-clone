@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0e0e0e;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: rgba(0, 0, 0, 0.85);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.logo span {
+    color: #ffcc00;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Payment Section */
+.payment-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 10%;
+    min-height: 80vh;
+    background: linear-gradient(135deg, #1c1c1c, #0d0d0d);
+}
+
+.payment-container {
+    background: #1a1a1a;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(255, 204, 0, 0.15);
+}
+
+.payment-container h2 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.payment-container p {
+    color: #bbb;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+}
+
+/* Form */
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.payment-form label {
+    color: #ffcc00;
+    font-weight: 500;
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: #2b2b2b;
+    color: #fff;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.pay-btn {
+    margin-top: 10px;
+    background: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pay-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.note {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .payment-container {
+        padding: 25px;
+    }
+}
